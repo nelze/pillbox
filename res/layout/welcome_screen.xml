@@ -6,19 +6,40 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:text="Join Us" />
-
-    <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+       	android:layout_width="165dp"
+        android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Sign In" />
+        android:background="@drawable/sign_in_selector"
+        android:onClick="signin"  />
+
+    <Button
+        android:id="@+id/button1"
+		android:layout_width="165dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/join_us_selector"
+        android:onClick="joinus"  />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/myTextView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        />
+
+    <com.prototype.pillbox.MyTextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:text="PILLBOX"
+        android:textSize="50sp" />
 
 </RelativeLayout>
