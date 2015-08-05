@@ -1,22 +1,334 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
-    <TextView
-        android:id="@+id/txtLabel"
-         android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/MyTextView07"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/medInfo"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/medName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/medName"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/refillReminders"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView08"
+        android:background="@color/white" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="16dp"
-        android:text="Insert Medicine View Here"/>
-    
-    <ImageView android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Cancel"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView01"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtLabel"
-        android:src="@drawable/logo"
+        android:layout_alignBaseline="@+id/myTextView1"
+        android:layout_alignBottom="@+id/myTextView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
-    
+        android:paddingBottom="10dp"
+        android:text="Add Medicine"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Save"
+        android:clickable="true"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/medName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView01"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Medicine Name"
+        android:clickable="true"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView04"
+        android:layout_below="@+id/color"
+        android:layout_marginTop="15dp"
+        android:text="Schedule"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView07"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Active"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView08"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView08"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:clickable="true"
+        android:text="Schedule"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/medInfo"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/medInfo"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Color"
+        android:clickable="true"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/reminders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/schedule"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/schedule"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:clickable="true"
+        android:text="Reminders"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/refillReminders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reminders"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:clickable="true"
+        android:paddingTop="5dp"
+        android:text="Refill Reminders"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MyTextView08"
+        android:layout_alignBottom="@+id/MyTextView08"
+        android:layout_alignParentRight="true" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/medInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTextView04"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:clickable="true"
+        android:text="Medicine Information"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/color"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_alignLeft="@+id/MyTextView07"
+        android:layout_alignRight="@+id/MyTextView02"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/view10"
+        android:layout_alignRight="@+id/view10"
+        android:layout_below="@+id/schedule"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/refillReminders"
+        android:layout_alignLeft="@+id/view12"
+        android:layout_alignRight="@+id/view10"
+        android:background="@color/grey" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myTextView1"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="14dp"
+        android:text="Info"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView04"
+        android:layout_alignTop="@+id/view2"
+        android:src="@drawable/pill" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view2"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view11"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view12"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/schedule"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view1"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/ImageView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/medInfo"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignTop="@+id/schedule"
+        android:src="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/refillReminders"
+        android:layout_alignLeft="@+id/imageView4"
+        android:src="@drawable/reminder" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_alignLeft="@+id/imageView6"
+        android:src="@drawable/meds" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView04"
+        android:layout_alignTop="@+id/view1"
+        android:src="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view10"
+        android:layout_alignTop="@+id/switch1"
+        android:src="@drawable/clock" />
+
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/view1"
+        android:layout_alignLeft="@+id/imageView8"
+        android:layout_alignRight="@+id/imageView8"
+        android:layout_below="@+id/view9"
+        android:background="@color/blue" />
 
 </RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView2"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/MyTextView07"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView05"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView02"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/MyTextView07"
+        android:background="@color/white" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Cancel"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myTextView1"
+        android:layout_alignBottom="@+id/myTextView1"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:text="Frequency"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView04"
+        android:layout_below="@+id/MyTextView05"
+        android:layout_marginTop="15dp"
+        android:text="Interval"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/MyTextView05"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/MyTextView07"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/view10"
+        android:layout_alignRight="@+id/view10"
+        android:layout_below="@+id/MyTextView07"
+        android:background="@color/grey" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myTextView1"
+        android:layout_below="@+id/MyTextView01"
+        android:layout_marginTop="14dp"
+        android:text="Frequency"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView01"
+        android:layout_alignParentBottom="true"
+        android:text="Delete"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/timesaday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MyTextView05"
+        android:layout_alignBottom="@+id/MyTextView05"
+        android:layout_alignLeft="@+id/MyTextView04"
+        android:layout_toLeftOf="@+id/MyTextView01"
+        android:ems="10"
+        android:inputType="number" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView01"
+        android:layout_below="@+id/MyTextView04"
+        android:layout_marginLeft="14dp"
+        android:onClick="quantity"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Times a Day"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView05"
+        android:layout_below="@+id/view12"
+        android:onClick="quantity"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Hours"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_alignLeft="@+id/view12"
+        android:onClick="quantity"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Every"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MyTextView02"
+        android:layout_alignBottom="@+id/MyTextView02"
+        android:layout_toLeftOf="@+id/MyTextView05"
+        android:layout_toRightOf="@+id/MyTextView03"
+        android:ems="10"
+        android:inputType="number" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/MyTextView04"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/MyTextView05"
+        android:onClick="save"
+        android:text="Save" />
+
+</RelativeLayout>

@@ -3,7 +3,7 @@
     <item android:state_enabled="true"
         android:state_pressed="true" android:drawable="@drawable/double_back_pressed_state" />
     <item android:state_enabled="true"
-        android:state_focused="true" android:drawable="@drawable/double_back_idle_state" />
+        android:state_focused="true" android:drawable="@drawable/double_back_pressed_state" />
     <item android:state_enabled="true"
         android:state_selected="true" android:drawable="@drawable/double_back_pressed_state" />
     <item

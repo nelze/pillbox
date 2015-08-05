@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/Saturday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/Sunday"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/view9"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2"
+        android:background="@color/white" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Cancel"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myTextView1"
+        android:layout_alignBottom="@+id/myTextView1"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:text="Days"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Update"
+        android:onClick="save"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/myTextView1"
+        android:layout_alignRight="@+id/MyTextView02"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/view10"
+        android:layout_alignRight="@+id/view10"
+        android:layout_below="@+id/view2"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/view12"
+        android:layout_alignRight="@+id/view10"
+        android:background="@color/grey" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RadioGroup>
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/Sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTextView01"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_toRightOf="@+id/radioSex"
+        android:padding="5dp"
+        android:text="Sunday"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/Monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Sunday"
+        android:layout_below="@+id/Sunday"
+        android:padding="5dp"
+        android:text="Monday"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/Tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Sunday"
+        android:layout_below="@+id/Monday"
+        android:padding="5dp"
+        android:text="Tuesday"
+        android:textSize="20sp" />
+
+     <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/Wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Sunday"
+        android:layout_below="@+id/Tuesday"
+        android:padding="5dp"
+        android:text="Wednesday"
+        android:textSize="20sp" />
+     
+      <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/Thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Sunday"
+        android:layout_below="@+id/Wednesday"
+        android:padding="5dp"
+        android:text="Thursday"
+        android:textSize="20sp" />
+      
+       <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/Friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Sunday"
+        android:layout_below="@+id/Thursday"
+        android:padding="5dp"
+        android:text="Friday"
+        android:textSize="20sp" />
+       
+        <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/Saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Sunday"
+        android:layout_below="@+id/Friday"
+        android:padding="5dp"
+        android:text="Saturday"
+        android:textSize="20sp" />
+
+        <View
+            android:id="@+id/view20"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/Tuesday"
+            android:layout_alignParentLeft="true"
+            android:background="@color/grey" />
+
+        <View
+            android:id="@+id/View01"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/Monday"
+            android:layout_alignParentLeft="true"
+            android:background="@color/grey" />
+
+        <View
+            android:id="@+id/View02"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/Wednesday"
+            android:layout_alignParentLeft="true"
+            android:background="@color/grey" />
+
+        <View
+            android:id="@+id/View03"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/Thursday"
+            android:layout_alignParentLeft="true"
+            android:background="@color/grey" />
+
+        <View
+            android:id="@+id/View04"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/Friday"
+            android:layout_alignParentLeft="true"
+            android:background="@color/grey" />
+
+        <View
+            android:id="@+id/View05"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/Friday"
+            android:layout_alignParentLeft="true"
+            android:background="@color/grey" />
+
+        <CheckBox
+            android:id="@+id/Sundaycb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/MyTextView02"
+            android:layout_alignTop="@+id/view2"
+             />
+
+        <CheckBox
+            android:id="@+id/Mondaycb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view20"
+            android:layout_alignLeft="@+id/Sundaycb" />
+
+        <CheckBox
+            android:id="@+id/Tuesdaycb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Wednesday"
+            android:layout_alignLeft="@+id/Mondaycb" />
+
+        <CheckBox
+            android:id="@+id/Wednesdaycb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/View03"
+            android:layout_alignLeft="@+id/Tuesdaycb" />
+
+        <CheckBox
+            android:id="@+id/Thursdaycb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/View04"
+            android:layout_alignLeft="@+id/Wednesdaycb" />
+
+        <CheckBox
+            android:id="@+id/Fridaycb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Saturday"
+            android:layout_alignLeft="@+id/Thursdaycb" />
+
+        <CheckBox
+            android:id="@+id/Saturdaycb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view9"
+            android:layout_alignRight="@+id/view12" />
+
+</RelativeLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white" />
+    
+    <View
+        android:id="@+id/View01"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView10"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/MyTextView07"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView05"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/pickdays"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView13"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView06"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView08"
+        android:background="@color/white" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Cancel"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myTextView1"
+        android:layout_alignBottom="@+id/myTextView1"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:text="Schedule"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Update"
+        android:onClick="save"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView04"
+        android:layout_below="@+id/MyTextView05"
+        android:layout_marginTop="15dp"
+        android:text="Reminders"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView07"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="8:00 AM"
+        android:onClick="time"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTextView04"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Select Frequency"
+        android:clickable="true"
+        android:onClick="frequency"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/MyTextView05"
+        android:background="@color/grey" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myTextView1"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="14dp"
+        android:text="Frequency / Intervals"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view1"
+        android:src="@drawable/arrow" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTextView01"
+        android:padding="5dp"
+        android:text="Days"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTextView12"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Every Day"
+        android:onClick="everyday"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView13"
+        android:src="@drawable/arrow" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/MyTextView13"
+        android:layout_alignParentLeft="true"
+        android:background="@color/grey" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/pickdays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView13"
+        android:layout_alignTop="@+id/view15"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Pick Days"
+        android:clickable="true"
+        android:onClick="days"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/days_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/MyTextView01"
+        android:text="Choose Days"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view3"
+        android:src="@drawable/arrow" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView08"
+        android:layout_below="@+id/MyTextView08"
+        android:padding="3dp"
+        android:text="Take 1"
+        android:textSize="10sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView07"
+        android:layout_below="@+id/view3"
+        android:layout_marginTop="17dp"
+        android:text="Duration"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTextView09"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Start Date"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MyTextView10"
+        android:layout_alignBottom="@+id/MyTextView10"
+        android:layout_toRightOf="@+id/MyTextView05"
+        android:text="May 9, 2015"
+        android:textSize="10sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView10"
+        android:layout_below="@+id/MyTextView10"
+        android:text="Days Limit" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_below="@+id/switch1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="End Date"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MyTextView11"
+        android:layout_alignBottom="@+id/MyTextView11"
+        android:layout_alignLeft="@+id/MyTextView15"
+        android:text="May 30, 2015"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switch1"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/MyTextView16"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow" />
+
+    
+
+</RelativeLayout>

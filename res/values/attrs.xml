@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <declare-styleable name="MyTextView">
-<attr name="fontName" format="string" />
+<attr name="fontName" format="string">streamline-24px.ttf</attr>
    	</declare-styleable>
 </resources>

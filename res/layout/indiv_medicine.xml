@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp">
+    
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/switch1"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/medicine" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/dosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:text="(500mg)"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/tabletsrem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="20 Tablets Left"
+        android:textSize="10sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/schedule"
+        android:layout_alignBottom="@+id/schedule"
+        android:layout_alignLeft="@+id/tabletsrem"
+        android:text="Active."
+        android:textSize="10sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status"
+        android:layout_alignTop="@+id/imageView1"
+        android:text="Biogesic"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tabletsrem"
+        android:layout_alignRight="@+id/dosage"
+        android:text="Daily.Every 6 Hours"
+        android:textSize="10sp" />
+
+</RelativeLayout>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/info"
+            android:layout_marginTop="15dp" />
+
+</RelativeLayout>

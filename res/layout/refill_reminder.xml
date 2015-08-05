@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView03"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView03"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/view9"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2"
+        android:background="@color/white" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Cancel"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myTextView1"
+        android:layout_alignBottom="@+id/myTextView1"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:text="Refill Reminder"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Update"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView01"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Refill Reminder"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/myTextView1"
+        android:layout_alignRight="@+id/MyTextView02"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/view10"
+        android:layout_alignRight="@+id/view10"
+        android:layout_below="@+id/view2"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/view12"
+        android:layout_alignRight="@+id/view10"
+        android:background="@color/grey" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MyTextView03"
+        android:layout_alignBottom="@+id/MyTextView03"
+        android:layout_alignParentRight="true" />
+    
+     <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radioday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view12"
+        android:layout_below="@+id/view9"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/radio_day" />
+
+    <RadioButton
+        android:id="@+id/radiopill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioday"
+        android:layout_alignBottom="@+id/radioday"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:text="@string/radio_pill" />
+
+</RelativeLayout>

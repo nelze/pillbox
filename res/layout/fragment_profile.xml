@@ -1,22 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
-    <TextView
-        android:id="@+id/txtLabel"
-         android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView05"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/MyTextView03"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView03"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/radioFemale"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MyTextView08"
+        android:background="@color/white" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="16dp"
-        android:text="Insert Profile Here"/>
-    
-    <ImageView android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Cancel"
+        android:textSize="15sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView01"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtLabel"
-        android:src="@drawable/logo"
+        android:layout_alignBaseline="@+id/myTextView1"
+        android:layout_alignBottom="@+id/myTextView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
-    
+        android:paddingBottom="10dp"
+        android:text="Edit Profile"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/MyTextView01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Save"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/MyTextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView01"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Leo Lofranco"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView07"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Birthday"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView08"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView08"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Weight"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView05"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView05"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Medicine Info"
+        android:textSize="20sp" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MyTextView09"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView09"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Height"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/MyTextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTextView04"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Email"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/MyTextView04"
+        android:layout_alignTop="@+id/MyTextView06"
+        android:layout_toLeftOf="@+id/MyTextView02"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/view10"
+        android:layout_alignRight="@+id/view10"
+        android:layout_below="@+id/MyTextView09"
+        android:background="@color/grey" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/MyTextView11"
+        android:layout_alignLeft="@+id/view12"
+        android:layout_alignRight="@+id/view10"
+        android:background="@color/grey" />
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myTextView1"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="14dp"
+        android:text="General Info"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view12"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/MyTextView09"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/ImageView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView05"
+        android:src="@drawable/arrow" />
+
+    <RadioButton
+        android:id="@+id/radioFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTextView10"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/MyTextView02"
+        android:text="@string/radio_female" />
+
+    <RadioButton
+        android:id="@+id/radioMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioFemale"
+        android:layout_alignBottom="@+id/radioFemale"
+        android:layout_toRightOf="@+id/myTextView1"
+        android:text="@string/radio_male" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MyTextView06"
+        android:ems="10"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Phone Number"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <com.prototype.pillbox.classes.MyTextView
+        android:id="@+id/MyTextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:text=""
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/MyTextView03"
+        android:layout_below="@+id/MyTextView01"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profilepic" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/MyTextView08"
+        android:layout_centerHorizontal="true"
+        android:background="@color/grey" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view3"
+        android:src="@drawable/arrow" />
 
 </RelativeLayout>
+</ScrollView>

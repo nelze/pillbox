@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.prototype.pillbox.WelcomeScreen"
+            android:name="com.prototype.pillbox.classes.WelcomeScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,25 +23,46 @@
             </intent-filter>
         </activity>
          <activity
-            android:name="com.prototype.pillbox.SignUp">
+            android:name="com.prototype.pillbox.classes.SignUp">
+         </activity>
+         <activity
+            android:name="com.prototype.pillbox.classes.EditMedicine">
          </activity>
           <activity
-            android:name="com.prototype.pillbox.Journal">
+            android:name="com.prototype.pillbox.classes.Journal">
+         </activity>
+         <activity
+            android:name="com.prototype.pillbox.classes.Schedule">
+         </activity>
+         <activity
+            android:name="com.prototype.pillbox.classes.Days">
+         </activity>
+         <activity
+            android:name="com.prototype.pillbox.classes.Frequency">
+         </activity>
+         <activity
+            android:name="com.prototype.pillbox.classes.Time">
+         </activity>
+         <activity
+            android:name="com.prototype.pillbox.classes.ColorSelect">
          </activity>
           <activity
-            android:name="com.prototype.pillbox.JournalFragment">
+            android:name="com.prototype.pillbox.classes.JournalFragment">
          </activity>
           <activity
-            android:name="com.prototype.pillbox.MedicineFragment">
+            android:name="com.prototype.pillbox.classes.MedicineFragment">
          </activity>
           <activity
-            android:name="com.prototype.pillbox.MyCubeFragment">
+            android:name="com.prototype.pillbox.classes.MyCubeFragment">
          </activity>
           <activity
-            android:name="com.prototype.pillbox.ProfileFragment">
+            android:name="com.prototype.pillbox.classes.ProfileFragment">
          </activity>
           <activity
-            android:name="com.prototype.pillbox.SignIn">
+            android:name="com.prototype.pillbox.classes.SignIn">
+         </activity>
+         <activity
+            android:name="com.prototype.pillbox.classes.ShowAll">
          </activity>
     </application>
 
